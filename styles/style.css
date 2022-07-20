@@ -1,0 +1,135 @@
+/* ---------------------------------
+                Fonts 
+------------------------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* --------------------------------- 
+                Base Style 
+------------------------------------ */
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+/* --------------------------------- 
+            Banner Style Start
+------------------------------------ */
+.banner-container {
+  width: 1321px;
+  margin-top: 50px;
+  background-color: #161616;
+  border-radius: 30px;
+}
+.banner-items {
+  display: flex;
+  /* flex-direction: column; */
+}
+.banner-msg {
+  width: 50%;
+  /* border: 1px solid white; */
+  padding: 10px;
+  margin: 0;
+  margin-left: -14px;
+}
+
+.banner-title {
+  margin: 0;
+  margin-top: 100px;
+  margin-left: 50px;
+  font-weight: 700;
+  font-size: 60px;
+  color: #ffffff;
+}
+.banner-text {
+  margin: 0;
+  margin-top: 50px;
+  margin-left: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
+.watch-now-btn {
+  margin: 0;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+  width: 187px;
+  height: 56px;
+  background-color: #dd0000;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  transition: width 2s;
+  transition-timing-function: linear;
+}
+.watch-now-btn:hover {
+  width: 300px;
+}
+
+.banner-img {
+  width: 50%;
+  /* border: 1px solid white; */
+  padding: 10px;
+  margin: 0 20px 0 20px;
+}
+.banner-img img {
+  width: 581px;
+  height: 613px;
+  position: relative;
+  top: 17px;
+}
+
+/* --------------------------------- 
+            Banner Style End
+------------------------------------ */
+
+/* -----------------------------------------------------------
+                  Content / Article Style Start
+-------------------------------------------------------------- */
+
+/* -----------------------------------------------------------
+                  Content / Article Style End
+-------------------------------------------------------------- */
+
+/* --------------------------------- 
+            Media Query
+------------------------------------ */
+
+/* --------------------------------- 
+            Mobile View
+------------------------------------ */
+
+@media only screen and (max-width: 688px) {
+  .banner-container {
+    width: 100%;
+    background-color: black;
+  }
+  .banner-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+  .banner-msg {
+    width: 100%;
+    border: 1px solid white;
+  }
+  .banner-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .banner-img {
+    width: 100%;
+    border: 1px solid white;
+    margin-left: 5px;
+  }
+}
