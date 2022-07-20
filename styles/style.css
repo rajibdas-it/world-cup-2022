@@ -337,7 +337,7 @@ body {
   }
   .item-news {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: white;
     align-items: flex-start;
     justify-content: space-between;
@@ -351,7 +351,6 @@ body {
 @media only screen and (min-width: 689px) and (max-width: 1262px) {
   .banner-items {
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     padding: 40px;
@@ -378,5 +377,12 @@ body {
       "five six"
       "seven eight"
       "nine .";
+  }
+  .item-news {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 }
