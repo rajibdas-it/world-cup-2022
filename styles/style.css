@@ -119,6 +119,11 @@ body {
     ". four five six"
     ". seven eight nine";
 }
+
+.link-btn {
+  display: flex;
+  flex-direction: column;
+}
 .item-news {
   grid-area: news;
   width: 312px;
@@ -132,30 +137,39 @@ body {
   color: white;
 }
 .match-btn {
-  width: 252px;
+  /* width: 252px; */
+  width: 185px;
   height: 64px;
-  margin: 30px 30px 0 30px;
+  margin: 30px 0px 0 20px;
+  /* margin: 30px 30px 0 30px; */
   border-radius: 8px;
   font-weight: 500;
   font-size: 20px;
   color: #161616;
 }
 .group-btn {
-  width: 252px;
+  width: 185px;
   height: 64px;
-  margin: 30px 30px 0 30px;
+  margin: 30px 0px 0 20px;
+  /* margin: 30px 30px 0 30px; */
   border-radius: 8px;
   font-weight: 500;
   font-size: 20px;
   color: #161616;
 }
 .blog-btn {
-  width: 252px;
+  width: 185px;
   height: 64px;
-  margin: 30px;
+  margin: 30px 0px 30px 20px;
+  /* margin: 30px; */
   border-radius: 8px;
   font-weight: 500;
   font-size: 20px;
+  color: #161616;
+}
+
+.link-btn a {
+  text-decoration: none;
   color: #161616;
 }
 
@@ -202,6 +216,7 @@ body {
   padding: 10px;
   border: 1px solid greenyellow;
 } */
+
 .card-img img {
   width: 312px;
   height: 175px;
@@ -252,7 +267,7 @@ body {
   /* display: none; */
 }
 
-.see-more-btn {
+.view-all-btn {
   width: 131px;
   height: 47px;
   margin: 0 auto;
@@ -277,7 +292,7 @@ body {
 footer {
   /* margin-top: 130px; */
   margin-top: 70px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   background-color: black;
   text-align: center;
   color: white;
@@ -303,7 +318,8 @@ hr {
   display: flex;
   justify-content: space-between;
 }
-.f-info > div {
+.f-info a {
+  text-decoration: none;
   font-weight: 500;
   font-size: 16px;
   color: #b9b9b9;
@@ -313,7 +329,6 @@ hr {
 .social-site {
   margin: 0 auto;
   width: 300px;
-  /* height: 24px; */
   display: flex;
   justify-content: center;
 }
@@ -323,6 +338,13 @@ hr {
   margin-top: 50px;
   margin-bottom: 130px;
   margin-right: 20px;
+}
+.social-site > div a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 30px;
+  color: #b9b9b9;
+  margin-top: 50px;
 }
 
 /* -----------------------------------------------------------
@@ -470,12 +492,29 @@ hr {
   }
 
   .link-btn {
-    width: 100%;
+    width: 95%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin: 0;
+    grid-gap: 10px;
   }
-
   .view-all {
     visibility: visible;
+  }
+  footer {
+    width: 100%;
+  }
+  footer .f-title {
+    /* place-items: center; */
+    flex-direction: column;
+  }
+  .flex-footer {
+    /* border: 1px solid white; */
+    display: flex;
+  }
+  .f-info {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
