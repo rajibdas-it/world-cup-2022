@@ -385,4 +385,10 @@ body {
     align-items: flex-start;
     justify-content: space-between;
   }
+
+  .link-btn {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
