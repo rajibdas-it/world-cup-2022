@@ -11,7 +11,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-main {
+/* main {
+  display: flex;
+  justify-content: center;
+} */
+.banner-flex-container {
   display: flex;
   justify-content: center;
 }
@@ -137,5 +141,25 @@ main {
     height: 613px;
     position: relative;
     top: 58px;
+  }
+}
+
+/* --------------------------------- 
+            Tablet View
+------------------------------------ */
+
+@media only screen and (min-width: 689px) and (max-width: 1262px) {
+  .banner-items {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .banner-img {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 100px;
   }
 }
