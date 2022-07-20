@@ -290,72 +290,27 @@ body {
 /* -----------------------------------------------------------
                   Footer Section Style Start
 -------------------------------------------------------------- */
-
-/* footer {
-  margin-top: 70px;
-  background-color: #161616;
-  text-align: center;
-  color: white;
-}
-
-.f-title {
-  margin-top: 130px;
-  font-weight: 600;
-  font-size: 40px;
-  text-align: center;
-  color: #ffffff;
-}
-
-hr {
-  width: 1320px;
-  margin: 0 auto;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-.f-info {
-  margin: 0 auto;
-  width: 890px;
-  display: flex;
-  justify-content: space-between;
-}
-.f-info a {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 16px;
-  color: #b9b9b9;
-  margin-top: 50px;
-}
-.social-site {
-  margin: 0 auto;
-  width: 300px;
-  display: flex;
-  justify-content: center;
-}
-.social-site > div {
-  font-weight: 500;
-  font-size: 30px;
-  margin-top: 50px;
-  margin-bottom: 130px;
-  margin-right: 20px;
-}
-.social-site > div a {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 30px;
-  color: #b9b9b9;
-  margin-top: 50px;
-} */
-
 footer {
-  /* margin-top: 130px; */
   margin-top: 70px;
-  border: 1px solid black;
+}
+.footer-flex {
+  display: flex;
+  justify-content: center;
   background-color: black;
-  text-align: center;
-  color: white;
 }
 
-.f-title {
-  margin-top: 130px;
+.footer-info {
+  width: 900px;
+}
+.footer-logo {
+  margin-top: 110px;
+  margin-bottom: 50px;
+  color: white;
+}
+.footer-menu {
+  margin-top: 50px;
+}
+.footer-logo h4 {
   font-weight: 600;
   font-size: 40px;
   text-align: center;
@@ -363,52 +318,38 @@ footer {
 }
 
 hr {
-  width: 1320px;
-  margin: 0 auto;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  margin-top: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
 }
-.f-info {
-  margin: 0 auto;
-  /* width: 100%; */
-  margin: 10px;
-  padding: 20px;
-  /* display: flex; */
-  /* justify-content: space-between; */
+.contact-info {
+  color: #ffffff;
 }
-.f-info > div {
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.menu-list a {
+  text-decoration: none;
+  padding: 10px;
   font-weight: 500;
   font-size: 16px;
   color: #b9b9b9;
-  margin-top: 50px;
-  /* margin-bottom: 130px; */
 }
-.social-site {
-  margin: 0 auto;
-  width: 300px;
-  /* height: 24px; */
-  display: flex;
-  justify-content: center;
+.social-media-icon {
+  text-align: center;
+  margin-left: 10px;
+  padding: 10px 20px;
+  margin-bottom: 100px;
 }
-.social-site > div {
-  font-weight: 500;
-  font-size: 30px;
-  margin-top: 50px;
-  margin-bottom: 130px;
-  margin-right: 20px;
-}
-.f-info a {
-  /* width: 100%; */
+
+.social-media-icon a {
   text-decoration: none;
-  font-weight: 500;
-  font-size: 24px;
   color: #b9b9b9;
-  margin-top: 50px;
-  padding: 20px;
-}
-.social-icon {
-  color: #b9b9b9;
-  /* color: #488eeb; */
-  font-size: 40px;
+  font-size: 20px;
+  padding: 10px 20px;
 }
 
 /* -----------------------------------------------------------
@@ -492,20 +433,9 @@ hr {
     align-items: flex-start;
     justify-content: space-between;
   }
-  footer {
+  .menu-list {
     width: 100%;
-  }
-  footer .f-title {
-    /* place-items: center; */
-    flex-direction: column;
-  }
-  .flex-footer {
-    /* border: 1px solid white; */
     display: flex;
-    /* flex-direction: column; */
-  }
-  .f-info {
-    /* width: 100%; */
     flex-direction: column;
   }
 }
@@ -566,21 +496,11 @@ hr {
   .view-all {
     visibility: visible;
   }
-  footer {
-    width: 100%;
-  }
-  footer .f-title {
-    /* place-items: center; */
-    flex-direction: row;
-  }
-  .flex-footer {
-    display: flex;
-  }
-  .f-info {
+  .menu-list {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
