@@ -293,7 +293,7 @@ hr {
             Mobile View
 ------------------------------------ */
 
-/* @media only screen and (max-width: 688px) {
+@media only screen and (max-width: 688px) {
   .banner-container {
     width: 100%;
     background-color: black;
@@ -325,13 +325,13 @@ hr {
     top: 58px;
   }
 
-  .content-container {
+  .matches-container {
     width: 100%;
   }
-  .content-items {
+  .grid-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     place-items: center;
     place-content: center;
     justify-content: center;
@@ -346,17 +346,14 @@ hr {
       "three"
       "four"
       "five"
-      "six"
-      "seven"
-      "eight"
-      "nine";
+      "six";
   }
-  .item-news {
+  .news-btn {
     display: flex;
     flex-direction: column;
-    place-content: center;
+    place-items: center;
     background-color: white;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
   }
   .menu-list {
@@ -364,13 +361,13 @@ hr {
     display: flex;
     flex-direction: column;
   }
-} */
+}
 
 /* --------------------------------- 
             Tablet View
 ------------------------------------ */
 
-/* @media only screen and (min-width: 689px) and (max-width: 992px) {
+@media only screen and (min-width: 689px) and (max-width: 992px) {
   .banner-items {
     display: flex;
     place-items: center;
@@ -385,10 +382,10 @@ hr {
     margin-top: 100px;
   }
 
-  .content-container {
+  .matches-container {
     width: 100%;
   }
-  .content-items {
+  .grid-container {
     display: grid;
     margin-left: 20px;
     place-items: start;
@@ -398,11 +395,9 @@ hr {
       "news news"
       "one two"
       "three four"
-      "five six"
-      "seven eight"
-      "nine .";
+      "five six";
   }
-  .item-news {
+  .news-btn {
     display: flex;
     flex-direction: row;
     place-items: center;
@@ -416,11 +411,9 @@ hr {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0;
-    grid-gap: 10px;
+    /* grid-gap: 10px; */
   }
-  .view-all {
-    visibility: visible;
-  }
+
   .menu-list {
     width: 100%;
     display: flex;
@@ -428,4 +421,4 @@ hr {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-} */
+}

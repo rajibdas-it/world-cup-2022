@@ -181,15 +181,15 @@ body {
 
 .match-btn:hover {
   background-color: #dd0000;
-  color: white;
+  /* color: white; */
 }
 .group-btn:hover {
   background-color: #dd0000;
-  color: white;
+  /* color: white; */
 }
 .blog-btn:hover {
   background-color: #dd0000;
-  color: white;
+  /* color: white; */
 }
 .item-1 {
   grid-area: one;
