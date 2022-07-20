@@ -23,6 +23,12 @@ body {
   display: flex;
   justify-content: center;
 }
+.common-item {
+  width: 312px;
+  height: 362px;
+  border-radius: 10px;
+  border: 0.5px solid rgb(209, 206, 206);
+}
 /* --------------------------------- 
             Banner Style Start
 ------------------------------------ */
@@ -212,10 +218,6 @@ body {
 .item-9 {
   grid-area: nine;
 }
-/* .card-img {
-  padding: 10px;
-  border: 1px solid greenyellow;
-} */
 
 .card-img img {
   width: 312px;
@@ -290,15 +292,13 @@ body {
 -------------------------------------------------------------- */
 
 footer {
-  /* margin-top: 130px; */
   margin-top: 70px;
-  /* border: 1px solid black; */
   background-color: black;
   text-align: center;
   color: white;
 }
 
-.f-title {
+.f-title h4 {
   margin-top: 130px;
   font-weight: 600;
   font-size: 40px;
@@ -449,7 +449,7 @@ hr {
             Tablet View
 ------------------------------------ */
 
-@media only screen and (min-width: 689px) and (max-width: 1262px) {
+@media only screen and (min-width: 689px) and (max-width: 992px) {
   .banner-items {
     display: flex;
     place-items: center;
@@ -509,12 +509,13 @@ hr {
     flex-direction: column;
   }
   .flex-footer {
-    /* border: 1px solid white; */
     display: flex;
   }
   .f-info {
     width: 100%;
+    display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     flex-wrap: wrap;
   }
 }
