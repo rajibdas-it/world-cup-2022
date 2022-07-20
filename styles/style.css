@@ -19,6 +19,10 @@ body {
   display: flex;
   justify-content: center;
 }
+.content-flex-container {
+  display: flex;
+  justify-content: center;
+}
 /* --------------------------------- 
             Banner Style Start
 ------------------------------------ */
@@ -28,6 +32,7 @@ body {
   background-color: #161616;
   border-radius: 30px;
 }
+
 .banner-items {
   display: flex;
   /* flex-direction: column; */
@@ -97,6 +102,169 @@ body {
 /* -----------------------------------------------------------
                   Content / Article Style Start
 -------------------------------------------------------------- */
+.content-container {
+  width: 1321px;
+  margin-top: 130px;
+  /* background-color: #161616;
+  border-radius: 30px; */
+}
+
+.content-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 24px;
+  grid-template-areas:
+    "news one two three"
+    ". four five six"
+    ". seven eight nine";
+}
+.item-news {
+  grid-area: news;
+  width: 312px;
+  height: 312px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #161616;
+  border-radius: 10px;
+  color: white;
+}
+.match-btn {
+  width: 252px;
+  height: 64px;
+  margin: 30px 30px 0 30px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #161616;
+}
+.group-btn {
+  width: 252px;
+  height: 64px;
+  margin: 30px 30px 0 30px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #161616;
+}
+.blog-btn {
+  width: 252px;
+  height: 64px;
+  margin: 30px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #161616;
+}
+
+.match-btn:hover {
+  background-color: #dd0000;
+  color: white;
+}
+.group-btn:hover {
+  background-color: #dd0000;
+  color: white;
+}
+.blog-btn:hover {
+  background-color: #dd0000;
+  color: white;
+}
+.item-1 {
+  grid-area: one;
+}
+.item-2 {
+  grid-area: two;
+}
+.item-3 {
+  grid-area: three;
+}
+.item-4 {
+  grid-area: four;
+}
+.item-5 {
+  grid-area: five;
+}
+.item-6 {
+  grid-area: six;
+}
+.item-7 {
+  grid-area: seven;
+}
+.item-8 {
+  grid-area: eight;
+}
+.item-9 {
+  grid-area: nine;
+}
+/* .card-img {
+  padding: 10px;
+  border: 1px solid greenyellow;
+} */
+.card-img img {
+  width: 312px;
+  height: 175px;
+  border-radius: 10px 10px 0px 0px;
+}
+.card-btn {
+  padding: 10px 20px;
+}
+.trans-btn {
+  width: 100px;
+  height: 32px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #161616;
+  /* border: none; */
+  border: 0.5px solid #161616;
+}
+.card-title h3 {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 18px;
+  color: #161616;
+  padding: 0 0 0 20px;
+}
+.card-fav {
+  margin: 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 0 0 20px;
+}
+.card-duration p {
+  margin-right: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(22, 22, 22, 0.7);
+}
+.card-msg p {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(22, 22, 22, 0.7);
+}
+
+.view-all {
+  visibility: hidden;
+  /* display: none; */
+}
+
+.see-more-btn {
+  width: 131px;
+  height: 47px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: #dd0000;
+  color: white;
+  border-radius: 5px;
+}
 
 /* -----------------------------------------------------------
                   Content / Article Style End
